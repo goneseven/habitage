@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 160 10% 12%;
+    --card: 40 25% 99%;
+    --card-foreground: 160 10% 12%;
+    --popover: 40 25% 99%;
+    --popover-foreground: 160 10% 12%;
+    --primary: 157 52% 16%;
+    --primary-foreground: 40 33% 97%;
+    --secondary: 40 20% 93%;
+    --secondary-foreground: 157 52% 16%;
+    --muted: 40 15% 92%;
+    --muted-foreground: 157 15% 40%;
+    --accent: 41 49% 56%;
+    --accent-foreground: 157 52% 16%;
+    --border: 40 20% 88%;
+    --input: 40 20% 88%;
+    --ring: 157 52% 16%;
+  }
+
+  body {
+    background-color: #faf8f5;
+    color: #1a2421;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5d1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ab0a7;
+}
+
+/* Editorial badge & card styles */
+.editorial-card {
+  background: #ffffff;
+  border: 1px solid rgba(35, 68, 55, 0.08);
+  box-shadow: 0 4px 20px -2px rgba(15, 41, 30, 0.04), 0 2px 6px -1px rgba(15, 41, 30, 0.02);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-card:hover {
+  border-color: rgba(197, 160, 89, 0.35);
+  box-shadow: 0 8px 30px -4px rgba(15, 41, 30, 0.08), 0 4px 12px -2px rgba(15, 41, 30, 0.04);
+}
